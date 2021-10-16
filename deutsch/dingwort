@@ -1,0 +1,146 @@
+# ; -*- mode: Shell-Script;-*-
+
+argument_count=7
+usage="Usage: dingwort artikel wort singular_akkusativ singular_dativ singular_genitiv plural_dativ plural_strategy"
+
+function run {
+    local -r nom_artikel="$1"
+    local wort="$2"
+    local akk_artikel=""
+    local dat_artikel=""
+    local gen_artikel=""
+    local singular_akkusativ="$3"
+    local singular_dativ="$4"
+    local singular_genitiv="$5"
+    local plural_dativ="$6"
+    local plural_strategy="$7"
+    local plural_form=""
+
+    if [[ "${nom_artikel}" == "der" ]]; then
+	akk_artikel="den"
+	dat_artikel="dem"
+	gen_artikel="des"
+    elif [[ "${nom_artikel}" == "das" ]]; then
+	akk_artikel="das"
+	dat_artikel="dem"
+	gen_artikel="des"
+    elif [[ "${nom_artikel}" == "die" ]]; then
+	akk_artikel="die"
+	dat_artikel="der"
+	gen_artikel="der"
+    else
+	echo "Der definite Artikel muss entweder 'der', 'das' oder 'die' sein." >&2
+	echo "${usage}" >&2
+	return 1
+    fi
+
+    if ! declinatio::array_contains "${plural_strategy}" "kein g e en s u u+e u+en" ; then
+	echo "Not a valid plural strategy." >&2
+	echo "${usage}" >&2
+	return 1
+    fi
+
+    echo "${wort}"
+
+    echo "${nom_artikel}" "${wort}"
+
+    # n = -n
+    # g = Der Nominativ und Akkusativ sind gleich.
+    if [[ "${singular_akkusativ}" == "n" ]]; then
+	echo "${akk_artikel}" "${wort}n"
+    elif [[ "${singular_akkusativ}" == "g" ]]; then
+	echo "${akk_artikel}" "${wort}"
+    else
+	echo "Not a valid ending for singular_akkusativ. Must be either 'n' or 'g'." >&2
+	echo "${usage}" >&2
+	return 1
+    fi
+
+    if [[ "${singular_dativ}" == "e" ]]; then
+	echo "${dat_artikel}" "${wort}e"
+    elif [[ "${singular_dativ}" == "n" ]]; then
+	echo "${dat_artikel}" "${wort}"
+    else
+	echo "Not a valid value for singular_dativ. Must be either 'e' or 'n'." >&2
+	echo "${usage}" >&2
+	return 1
+    fi
+
+    if [[ "${singular_genitiv}" == "es" ]]; then
+	echo "${gen_artikel}" "${wort}es"
+    elif [[ "${singular_genitiv}" == "s" ]]; then
+	echo "${gen_artikel}" "${wort}s"
+    elif [[ "${singular_genitiv}" == "n" ]]; then
+	echo "${gen_artikel}" "${wort}"
+    else
+	echo "Not a valid singular_genitiv. Must be one of: 'es,' 'e,' or 'n.'" >&2
+	echo "${usage}" >&2
+	return 1
+    fi
+
+    plural_form="${wort}"
+
+    # Exit quickly to avoid more complicated code below.
+    if [[ "${plural_strategy}" == "kein" ]]; then
+	echo -e "-\n-\n-\n-"
+	return 0
+    fi
+
+    if [[ "${plural_strategy}" == "g" ]]; then
+	:
+    fi
+
+    if declinatio::ends_with "${plural_strategy}" "s"; then
+	plural_form="${plural_form}s"
+    fi
+
+    if declinatio::ends_with "${plural_strategy}" "e"; then
+	plural_form="${plural_form}e"
+    fi
+
+    if declinatio::ends_with "${plural_strategy}" "en"; then
+
+	if declinatio::ends_with "${wort}" "e"; then
+	    plural_form="${plural_form}n"
+	else
+	    plural_form="${plural_form}en"
+	fi
+
+    fi
+
+    if declinatio::begins_with "${plural_strategy}" "u"; then
+
+	if [[ "${plural_form}" =~ (.*)a(.*) ]]; then
+	    plural_form="${BASH_REMATCH[1]}ä${BASH_REMATCH[2]}"
+
+	elif [[ "${plural_form}" =~ (.*)o(.*) ]]; then
+	    plural_form="${BASH_REMATCH[1]}ö${BASH_REMATCH[2]}"
+
+	elif [[ "${plural_form}" =~ (.*)u(.*) ]]; then
+	    plural_form="${BASH_REMATCH[1]}ü${BASH_REMATCH[2]}"
+
+	else
+
+	    echo "Didn't match for umlaut." >&2
+	    echo "${usage}" >&2
+	    return 1
+
+	fi
+    fi
+
+    echo "die ${plural_form}"
+    echo "die ${plural_form}"
+
+    # n = -n
+    # g = Der Nominativ und Akkusativ sind gleich.
+    if [[ "${plural_dativ}" == "n" ]]; then
+	echo "den ${plural_form}n"
+    elif [[ "${plural_dativ}" == "g" ]]; then
+	echo "den ${plural_form}"
+    else
+	echo "Not a valid plural dativ. Must be 'n' or 'g.'"
+    fi
+
+    echo "der ${plural_form}"
+
+}
