@@ -42,7 +42,7 @@ function run {
     fi
 
     local praes="$1"
-    local praet="${2%i}"
+    local perf="${2%i}"
     local pp="$3"
     local inf="$4"
 

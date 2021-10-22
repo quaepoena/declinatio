@@ -79,44 +79,44 @@
 <praes>entur
 
 # perf-ind-act
-<praet>i
-<praet>isti
-<praet>it
-<praet>imus
-<praet>istis
-<praet>erunt
+<perf>i
+<perf>isti
+<perf>it
+<perf>imus
+<perf>istis
+<perf>erunt
 
 # perf-con-act
-<praet>erim
-<praet>eris
-<praet>erit
-<praet>erimus
-<praet>eritis
-<praet>erint
+<perf>erim
+<perf>eris
+<perf>erit
+<perf>erimus
+<perf>eritis
+<perf>erint
 
 # plusquam-ind-act
-<praet>eram
-<praet>eras
-<praet>erat
-<praet>eramus
-<praet>eratis
-<praet>erant
+<perf>eram
+<perf>eras
+<perf>erat
+<perf>eramus
+<perf>eratis
+<perf>erant
 
 # plusquam-con-act
-<praet>issem
-<praet>isses
-<praet>isset
-<praet>issemus
-<praet>issetis
-<praet>issent
+<perf>issem
+<perf>isses
+<perf>isset
+<perf>issemus
+<perf>issetis
+<perf>issent
 
 # futex-act
-<praet>ero
-<praet>eris
-<praet>erit
-<praet>erimus
-<praet>eritis
-<praet>erint
+<perf>ero
+<perf>eris
+<perf>erit
+<perf>erimus
+<perf>eritis
+<perf>erint
 
 # imperativ
 <praes>e
