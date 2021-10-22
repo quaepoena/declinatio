@@ -1,0 +1,8 @@
+# ; -*- mode: Shell-Script;-*-
+
+argument_count=4
+usage="Usus: verbum <a verbo declinatio> (e.g. amo amavi amatus amare)"
+
+function run {
+
+}
