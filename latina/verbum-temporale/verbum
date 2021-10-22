@@ -1,8 +1,40 @@
-# ; -*- mode: Shell-Script;-*-
+# -*- mode: Shell-Script;-*-
 
 argument_count=4
 usage="Usus: verbum <a verbo declinatio> (e.g. amo amavi amatus amare)"
 
-function run {
+function coniugationem_sciscere() {
 
+    if declinatio::ends_with "$2" "are"; then
+	echo "1"
+    elif declinatio::ends_with "$1" "eo"; then
+	echo "2"
+    elif declinatio::ends_with "$2" "ere"; then
+	if declinatio::ends_with "$1" "io"; then
+	    echo "3-io"
+	else
+	    echo "3-o"
+	fi
+    else
+	echo "4"
+    fi
+
+    return 0
+
+}
+
+function run {
+    local praes="$1"
+    local praet="$2"
+    local pp="$3"
+    local inf="$4"
+
+    coniugatio="$(coniugationem_sciscere "${praes}" "${inf}")"
+
+    echo "${coniugatio}"
+
+    while read line; do
+	if [[ "${line}" =~ \<(.+)\> ]]; then
+	    echo "${line/${BASH_REMATCH[0]}/${!BASH_REMATCH[1]}}"; fi;
+    done < "~/decliatio/latina/verbum-temporale/${coniugatio}"
 }
