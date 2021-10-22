@@ -24,6 +24,22 @@ function coniugationem_sciscere() {
 }
 
 function run {
+
+    if ! declinatio::ends_with "$1" "o"; then
+	echo "Praesentem cum 'o' finire debet." >&2
+	return 1
+    fi
+
+    if ! declinatio::ends_with "$2" "i"; then
+	echo "Perfectum cum 'i' finire debet." >&2
+	return 1
+    fi
+
+    if ! declinatio::ends_with "$4" "re"; then
+	echo "Infinitivum cum 're' finire debet." >&2
+	return 1
+    fi
+
     local praes="$1"
     local praet="$2"
     local pp="$3"
