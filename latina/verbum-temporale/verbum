@@ -25,6 +25,7 @@ function coniugationem_sciscere() {
 
 function run {
 
+    # TODO: Update this to handle "odi."
     if ! declinatio::ends_with "$1" "o"; then
 	echo "Praesentem cum 'o' finire debet." >&2
 	return 1
