@@ -5,6 +5,7 @@
 <praes>imus
 <praes>itis
 <praes>iunt
+
 # prae-con-act
 <praes>iam
 <praes>ias
@@ -12,6 +13,7 @@
 <praes>iamus
 <praes>iatis
 <praes>iant
+
 # impf-ind-act
 <praes>iebam
 <praes>iebas
@@ -19,6 +21,7 @@
 <praes>iebamus
 <praes>iebatis
 <praes>iebant
+
 # impf-con-act
 <inf>m
 <inf>s
@@ -26,6 +29,7 @@
 <inf>mus
 <inf>tis
 <inf>nt
+
 # fut-ind-act
 <praes>iam
 <praes>ies
@@ -33,6 +37,7 @@
 <praes>iemus
 <praes>ietis
 <praes>ient
+
 # prae-ind-pas
 <praes>ior
 <praes>eris
@@ -40,6 +45,7 @@
 <praes>imur
 <praes>imini
 <praes>iuntur
+
 # prae-con-pas
 <praes>iar
 <praes>iaris
@@ -47,6 +53,7 @@
 <praes>iamur
 <praes>iamini
 <praes>iantur
+
 # impf-ind-pas
 <praes>iebar
 <praes>iebaris
@@ -54,6 +61,7 @@
 <praes>iebamur
 <praes>iebamini
 <praes>iebantur
+
 # impf-con-pas
 <inf>r
 <inf>ris
@@ -61,6 +69,7 @@
 <inf>mur
 <inf>mini
 <inf>ntur
+
 # fut-ind-pas
 <praes>iar
 <praes>ieris
@@ -68,6 +77,7 @@
 <praes>iemur
 <praes>iemini
 <praes>ientur
+
 # perf-ind-act
 <praet>i
 <praet>isti
@@ -75,6 +85,7 @@
 <praet>imus
 <praet>istis
 <praet>erunt
+
 # perf-con-act
 <praet>erim
 <praet>eris
@@ -82,6 +93,7 @@
 <praet>erimus
 <praet>eritis
 <praet>erint
+
 # plusquam-ind-act
 <praet>eram
 <praet>eras
@@ -89,6 +101,7 @@
 <praet>eramus
 <praet>eratis
 <praet>erant
+
 # plusquam-con-act
 <praet>issem
 <praet>isses
@@ -96,6 +109,7 @@
 <praet>issemus
 <praet>issetis
 <praet>issent
+
 # futex-act
 <praet>ero
 <praet>eris
@@ -103,6 +117,7 @@
 <praet>erimus
 <praet>eritis
 <praet>erint
+
 # imperativum
 <praes>e
 <praes>ite
