@@ -1,0 +1,24 @@
+# ; -*- mode: Shell-Script;-*-
+
+argument_count=1
+usage="Usage: 1 word."
+
+function run {
+    local -r word="$1"
+    local -r stem="${word%a}"
+
+    echo "${stem}a"
+    echo "${stem}a"
+    echo "${stem}am"
+    echo "${stem}ae"
+    echo "${stem}ae"
+    echo "${stem}a"
+    echo "${stem}ae"
+    echo "${stem}ae"
+    echo "${stem}as"
+    echo "${stem}arum"
+    echo "${stem}is"
+    echo "${stem}is"
+
+    echo "1"
+}

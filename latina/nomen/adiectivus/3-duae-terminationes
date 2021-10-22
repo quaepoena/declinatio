@@ -1,0 +1,51 @@
+# ; -*- mode: Shell-Script;-*-
+
+argument_count=1
+usage="Usage: 3-duae-terminationes word."
+
+function run {
+    local -r word="$1"
+    local -r stem="${word%is}"
+
+    # figuare masculinae
+    echo "${stem}is"
+    echo "${stem}is"
+    echo "${stem}em"
+    echo "${stem}is"
+    echo "${stem}i"
+    echo "${stem}i"
+    echo "${stem}es"
+    echo "${stem}es"
+    echo "${stem}es"
+    echo "${stem}ium"
+    echo "${stem}ibus"
+    echo "${stem}ibus"
+
+    # figuare femininae
+    echo "${stem}is"
+    echo "${stem}is"
+    echo "${stem}em"
+    echo "${stem}is"
+    echo "${stem}i"
+    echo "${stem}i"
+    echo "${stem}es"
+    echo "${stem}es"
+    echo "${stem}es"
+    echo "${stem}ium"
+    echo "${stem}ibus"
+    echo "${stem}ibus"
+
+    # figuare neutrales
+    echo "${stem}e"
+    echo "${stem}e"
+    echo "${stem}e"
+    echo "${stem}is"
+    echo "${stem}i"
+    echo "${stem}i"
+    echo "${stem}ia"
+    echo "${stem}ia"
+    echo "${stem}ia"
+    echo "${stem}ium"
+    echo "${stem}ibus"
+    echo "${stem}ibus"
+}

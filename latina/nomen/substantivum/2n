@@ -1,0 +1,24 @@
+# ; -*- mode: Shell-Script;-*-
+
+argument_count=1
+usage="Usage: 2n word."
+
+function run {
+    local -r word="$1"
+    local -r stem="${word%um}"
+
+    echo "${stem}um"
+    echo "${stem}um"
+    echo "${stem}um"
+    echo "${stem}i"
+    echo "${stem}o"
+    echo "${stem}o"
+    echo "${stem}a"
+    echo "${stem}a"
+    echo "${stem}a"
+    echo "${stem}orum"
+    echo "${stem}is"
+    echo "${stem}is"
+
+    echo "2n"
+}

@@ -1,0 +1,117 @@
+# prae-ind-act
+<pres_stem>io
+<pres_stem>is
+<pres_stem>it
+<pres_stem>imus
+<pres_stem>itis
+<pres_stem>iunt
+# prae-con-act
+<pres_stem>iam
+<pres_stem>ias
+<pres_stem>iat
+<pres_stem>iamus
+<pres_stem>iatis
+<pres_stem>iant
+# impf-ind-act
+<pres_stem>iebam
+<pres_stem>iebas
+<pres_stem>iebat
+<pres_stem>iebamus
+<pres_stem>iebatis
+<pres_stem>iebant
+# impf-con-act
+<pres_inf>m
+<pres_inf>s
+<pres_inf>t
+<pres_inf>mus
+<pres_inf>tis
+<pres_inf>nt
+# fut-ind-act
+<pres_stem>iam
+<pres_stem>ies
+<pres_stem>iet
+<pres_stem>iemus
+<pres_stem>ietis
+<pres_stem>ient
+# prae-ind-pas
+<pres_stem>ior
+<pres_stem>iris
+<pres_stem>itur
+<pres_stem>imur
+<pres_stem>imini
+<pres_stem>iuntur
+# prae-con-pas
+<pres_stem>iar
+<pres_stem>iaris
+<pres_stem>iatur
+<pres_stem>iamur
+<pres_stem>iamini
+<pres_stem>iantur
+# impf-ind-pas
+<pres_stem>iebar
+<pres_stem>iebaris
+<pres_stem>iebatur
+<pres_stem>iebamur
+<pres_stem>iebamini
+<pres_stem>iebantur
+# impf-con-pas
+<pres_inf>r
+<pres_inf>ris
+<pres_inf>tur
+<pres_inf>mur
+<pres_inf>mini
+<pres_inf>ntur
+# fut-ind-pas
+<pres_stem>iar
+<pres_stem>ieris
+<pres_stem>ietur
+<pres_stem>iemur
+<pres_stem>iemini
+<pres_stem>ientur
+# perf-ind-act
+<perf_stem>i
+<perf_stem>isti
+<perf_stem>it
+<perf_stem>imus
+<perf_stem>istis
+<perf_stem>erunt
+# perf-con-act
+<perf_stem>erim
+<perf_stem>eris
+<perf_stem>erit
+<perf_stem>erimus
+<perf_stem>eritis
+<perf_stem>erint
+# plusquam-ind-act
+<perf_stem>eram
+<perf_stem>eras
+<perf_stem>erat
+<perf_stem>eramus
+<perf_stem>eratis
+<perf_stem>erant
+# plusquam-con-act
+<perf_stem>issem
+<perf_stem>isses
+<perf_stem>isset
+<perf_stem>issemus
+<perf_stem>issetis
+<perf_stem>issent
+# futex-act
+<perf_stem>ero
+<perf_stem>eris
+<perf_stem>erit
+<perf_stem>erimus
+<perf_stem>eritis
+<perf_stem>erint
+# imperativum
+<pres_stem>i
+<pres_stem>ite
+<pres_stem>ito
+<pres_stem>ito
+<pres_stem>itote
+<pres_stem>iunto
+<pres_stem>ire
+<pres_stem>imini
+<pres_stem>itor
+<pres_stem>itor;
+<pres_stem>iuntor

@@ -1,0 +1,24 @@
+# ; -*- mode: Shell-Script;-*-
+
+argument_count=1
+usage="Usage: 5 word."
+
+function run {
+    local -r word="$1"
+    local -r stem="${word%s}"
+
+    echo "${stem}s"
+    echo "${stem}s"
+    echo "${stem}m"
+    echo "${stem}i"
+    echo "${stem}i"
+    echo "${stem}"
+    echo "${stem}s"
+    echo "${stem}s"
+    echo "${stem}s"
+    echo "${stem}rum"
+    echo "${stem}bus"
+    echo "${stem}bus"
+
+    echo "5"
+}

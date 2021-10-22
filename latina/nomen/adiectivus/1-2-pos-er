@@ -1,0 +1,51 @@
+# ; -*- mode: Shell-Script;-*-
+
+argument_count=2
+usage="Usage: 1-2-pos-er word stem."
+
+function run {
+    local -r word="$1"
+    local -r stem="$2"
+
+    # figuare masculinae
+    echo "${word}"
+    echo "${word}"
+    echo "${stem}um"
+    echo "${stem}i"
+    echo "${stem}o"
+    echo "${stem}o"
+    echo "${stem}i"
+    echo "${stem}i"
+    echo "${stem}os"
+    echo "${stem}orum"
+    echo "${stem}is"
+    echo "${stem}is"
+
+    # figuare femininae
+    echo "${stem}a"
+    echo "${stem}a"
+    echo "${stem}am"
+    echo "${stem}ae"
+    echo "${stem}ae"
+    echo "${stem}a"
+    echo "${stem}ae"
+    echo "${stem}ae"
+    echo "${stem}as"
+    echo "${stem}arum"
+    echo "${stem}is"
+    echo "${stem}is"
+
+    # figuare neutrales
+    echo "${stem}um"
+    echo "${stem}um"
+    echo "${stem}um"
+    echo "${stem}i"
+    echo "${stem}o"
+    echo "${stem}o"
+    echo "${stem}a"
+    echo "${stem}a"
+    echo "${stem}a"
+    echo "${stem}orum"
+    echo "${stem}is"
+    echo "${stem}is"
+}

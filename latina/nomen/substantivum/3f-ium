@@ -1,0 +1,24 @@
+# ; -*- mode: Shell-Script;-*-
+
+argument_count=2
+usage="Usage: 3f-ium word stem."
+
+function run {
+    local -r word="$1"
+    local -r stem="$2"
+
+    echo "${word}"
+    echo "${word}"
+    echo "${stem}em"
+    echo "${stem}is"
+    echo "${stem}i"
+    echo "${stem}e"
+    echo "${stem}es"
+    echo "${stem}es"
+    echo "${stem}es"
+    echo "${stem}ium"
+    echo "${stem}ibus"
+    echo "${stem}ibus"
+
+    echo "3f-ium"
+}

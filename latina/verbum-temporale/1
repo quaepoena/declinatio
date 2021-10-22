@@ -1,0 +1,117 @@
+# prae-ind-act
+<pres_stem>o
+<pres_stem>as
+<pres_stem>at
+<pres_stem>amus
+<pres_stem>atis
+<pres_stem>ant
+# prae-con-act
+<pres_stem>em
+<pres_stem>es
+<pres_stem>et
+<pres_stem>emus
+<pres_stem>etis
+<pres_stem>ent
+# impf-ind-cat
+<pres_stem>abam
+<pres_stem>abas
+<pres_stem>abat
+<pres_stem>abamus
+<pres_stem>abatis
+<pres_stem>abant
+# impf-con-act
+<pres_inf>m
+<pres_inf>s
+<pres_inf>t
+<pres_inf>mus
+<pres_inf>tis
+<pres_inf>nt
+# fut-ind-act
+<pres_stem>abo
+<pres_stem>abis
+<pres_stem>abit
+<pres_stem>abimus
+<pres_stem>abitus
+<pres_stem>abunt
+# prae-ind-pas
+<pres_stem>or
+<pres_stem>aris
+<pres_stem>atur
+<pres_stem>amur
+<pres_stem>amini
+<pres_stem>antur
+# prae-con-pas
+<pres_stem>er
+<pres_stem>eris
+<pres_stem>etur
+<pres_stem>emur
+<pres_stem>emini
+<pres_stem>entur
+# impf-ind-pas
+<pres_stem>abar
+<pres_stem>abaris
+<pres_stem>abatur
+<pres_stem>abamur
+<pres_stem>abamini
+<pres_stem>abantur
+# impf-con-pas
+<pres_inf>r
+<pres_inf>ris
+<pres_inf>tur
+<pres_inf>mur
+<pres_inf>mini
+<pres_inf>ntur
+# fut-ind-pas
+<pres_stem>abor
+<pres_stem>aberis
+<pres_stem>abitur
+<pres_stem>abimur
+<pres_stem>abimini
+<pres_stem>abuntur
+# perf-ind-act
+<perf_stem>i
+<perf_stem>isti
+<perf_stem>it
+<perf_stem>imus
+<perf_stem>istis
+<perf_stem>erunt
+# perf-con-act
+<perf_stem>erim
+<perf_stem>eris
+<perf_stem>erit
+<perf_stem>erimus
+<perf_stem>eritis
+<perf_stem>erint
+# plusquam-ind-act
+<perf_stem>eram
+<perf_stem>eras
+<perf_stem>erat
+<perf_stem>eramus
+<perf_stem>eratis
+<perf_stem>erant
+# plusquam-con-act
+<perf_stem>issem
+<perf_stem>isses
+<perf_stem>isset
+<perf_stem>issemus
+<perf_stem>issetis
+<perf_stem>issent
+# futex-act
+<perf_stem>ero
+<perf_stem>eris
+<perf_stem>erit
+<perf_stem>erimus
+<perf_stem>eritis
+<perf_stem>erint
+# imperativum
+<pres_stem>a
+<pres_stem>ate
+<pres_stem>ato
+<pres_stem>ato
+<pres_stem>atote
+<pres_stem>anto
+<pres_stem>are
+<pres_stem>amini
+<pres_stem>ator
+<pres_stem>ator;
+<pres_stem>antor

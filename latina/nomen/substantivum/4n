@@ -1,0 +1,24 @@
+# ; -*- mode: Shell-Script;-*-
+
+argument_count=1
+usage="Usage: 4n word."
+
+function run {
+    local -r word="$1"
+    local -r stem="${word%u}"
+
+    echo "${stem}u"
+    echo "${stem}u"
+    echo "${stem}u"
+    echo "${stem}us"
+    echo "${stem}u"
+    echo "${stem}u"
+    echo "${stem}ua"
+    echo "${stem}ua"
+    echo "${stem}ua"
+    echo "${stem}uum"
+    echo "${stem}ibus"
+    echo "${stem}ibus"
+
+    echo "4n"
+}

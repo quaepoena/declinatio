@@ -1,0 +1,51 @@
+# ; -*- mode: Shell-Script;-*-
+
+argument_count=1
+usage="Usage: com stem."
+
+function run {
+    local -r stem="$1"
+
+    # figuare masculinae
+    echo "${stem}ior"
+    echo "${stem}ior"
+    echo "${stem}iorem"
+    echo "${stem}ioris"
+    echo "${stem}iori"
+    echo "${stem}iore"
+    echo "${stem}iores"
+    echo "${stem}iores"
+    echo "${stem}iores"
+    echo "${stem}iorum"
+    echo "${stem}ioribus"
+    echo "${stem}ioribus"
+
+    # figuare femininae
+    echo "${stem}ior"
+    echo "${stem}ior"
+    echo "${stem}iorem"
+    echo "${stem}ioris"
+    echo "${stem}iori"
+    echo "${stem}iore"
+    echo "${stem}iores"
+    echo "${stem}iores"
+    echo "${stem}iores"
+    echo "${stem}iorum"
+    echo "${stem}ioribus"
+    echo "${stem}ioribus"
+
+    # figuare neutrales
+    echo "${stem}ius"
+    echo "${stem}ius"
+    echo "${stem}ius"
+    echo "${stem}ioris"
+    echo "${stem}iori"
+    echo "${stem}iore"
+    echo "${stem}iora"
+    echo "${stem}iora"
+    echo "${stem}iora"
+    echo "${stem}iorum"
+    echo "${stem}ioribus"
+    echo "${stem}ioribus"
+
+}

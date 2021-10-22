@@ -1,0 +1,13 @@
+# ; -*- mode: Shell-Script;-*-
+
+argument_count=2
+usage="Usage: adverbium word stem."
+
+function run {
+    local -r word="$1"
+    local -r stem="$2"
+
+    echo "${word}"
+    echo "${stem}ius"
+    echo "${stem}issime"
+}

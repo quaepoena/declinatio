@@ -1,0 +1,55 @@
+# ; -*- mode: Shell-Script;-*-
+
+argument_count=1
+usage="Usage: 3n-areal word."
+
+function ends_with() {
+    local -r word="$1"
+    local -r ending="$2"
+    local -r stem="${word%${ending}}"
+
+    if [[ "$(( "${#stem}" + "${#ending}" == "${#word}" ))" -ne 1 ]]; then
+	return 1
+    fi
+
+    return 0
+}
+
+function run {
+    local -r word="$1"
+    local -i e_ending=0
+
+    if ends_with "${word}" "e"; then
+	local -r stem="${word%e}"
+	e_ending=1
+    elif ends_with "${word}" "ar" || ends_with "${word}" "al"; then
+	local -r stem="${word}"
+    else
+	echo "${usage}" >&2
+	echo "Is this a word ending in -ar, -e, or -al?" >&2
+	return 1
+    fi
+
+
+    if [[ e_ending -eq 1 ]]; then
+	echo "${stem}e"
+	echo "${stem}e"
+	echo "${stem}e"
+    else
+	echo "${stem}"
+	echo "${stem}"
+	echo "${stem}"
+    fi
+
+    echo "${stem}is"
+    echo "${stem}i"
+    echo "${stem}i"
+    echo "${stem}ia"
+    echo "${stem}ia"
+    echo "${stem}ia"
+    echo "${stem}ium"
+    echo "${stem}ibus"
+    echo "${stem}ibus"
+
+    echo "3n-areal"
+}
