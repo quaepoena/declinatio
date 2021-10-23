@@ -5,34 +5,39 @@ usage="Usus: verbum <a verbo declinatio> (e.g. amo amavi amatus amare)"
 
 function coniugationem_sciscere() {
 
-    if declinatio::ends_with "$2" "are"; then
+    if declinatio::ends_with "$2" "āre"; then
 	echo "1"
-    elif declinatio::ends_with "$1" "eo"; then
+    elif declinatio::ends_with "$1" "eō"; then
 	echo "2"
-    elif declinatio::ends_with "$2" "ere"; then
-	if declinatio::ends_with "$1" "io"; then
+    elif declinatio::ends_with "$2" "īre"; then
+	echo "4"
+    else
+	if declinatio::ends_with "$1" "iō"; then
 	    echo "3-io"
 	else
 	    echo "3-o"
 	fi
-    else
-	echo "4"
     fi
 
     return 0
 
 }
 
+function diacritica_removere() {
+    verbum="$(echo "${1}" | sed 's_ā_a_g; s_ē_e_g; s_ī_i_g; s_ō_o_g; s_ū_u_g')"
+    echo "${verbum}"
+}
+
 function run {
 
     # TODO: Update this to handle "odi."
-    if ! declinatio::ends_with "$1" "o"; then
-	echo "Praesentem cum 'o' finire debet." >&2
+    if ! declinatio::ends_with "$1" "ō"; then
+	echo "Praesentem cum 'ō' finire debet." >&2
 	return 1
     fi
 
-    if ! declinatio::ends_with "$2" "i"; then
-	echo "Perfectum cum 'i' finire debet." >&2
+    if ! declinatio::ends_with "$2" "ī"; then
+	echo "Perfectum cum 'ī' finire debet." >&2
 	return 1
     fi
 
@@ -41,16 +46,21 @@ function run {
 	return 1
     fi
 
-    local praes="$1"
-    local perf="${2%i}"
+    local praes="${1%ō}"
+    local perf="${2%ī}"
     local pp="$3"
     local inf="$4"
 
     coniugatio="$(coniugationem_sciscere "${praes}" "${inf}")"
 
+    local perf_neu="${pp/%s/m}"
+    local fut="${pp/%us/ūrus}"
+    local fut_neu="${fut/%s/m}"
+
     while read line; do
 	if [[ "${line}" =~ \<(.+)\> ]]; then
-	    echo "${line/${BASH_REMATCH[0]}/${!BASH_REMATCH[1]}}"; fi;
+	    echo "${line/${BASH_REMATCH[0]}/${!BASH_REMATCH[1]}}";
+	fi
     done < ~/declinatio/latina/verbum-temporale/${coniugatio}
 
 }
