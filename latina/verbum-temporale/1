@@ -1,90 +1,90 @@
 # prae-ind-act
-<praes>o
-<praes>as
+<praes>ō
+<praes>ās
 <praes>at
-<praes>amus
-<praes>atis
+<praes>āmus
+<praes>ātis
 <praes>ant
 
 # prae-con-act
 <praes>em
-<praes>es
+<praes>ēs
 <praes>et
-<praes>emus
-<praes>etis
+<praes>ēmus
+<praes>ētis
 <praes>ent
 
- # impf-ind-cat
-<praes>abam
-<praes>abas
-<praes>abat
-<praes>abamus
-<praes>abatis
-<praes>abant
+# impf-ind-cat
+<praes>ābam
+<praes>ābās
+<praes>ābat
+<praes>ābāmus
+<praes>ābātis
+<praes>ābant
 
- # impf-con-act
-<inf>m
-<inf>s
-<inf>t
-<inf>mus
-<inf>tis
-<inf>nt
+# impf-con-act
+<praes>ārem
+<praes>ārēs
+<praes>āret
+<praes>ārēmus
+<praes>ārētis
+<praes>ārent
 
- # fut-ind-act
-<praes>abo
-<praes>abis
-<praes>abit
-<praes>abimus
-<praes>abitus
-<praes>abunt
+# fut-ind-act
+<praes>ābo
+<praes>ābis
+<praes>ābit
+<praes>ābimus
+<praes>ābitus
+<praes>ābunt
 
- # prae-ind-pas
+# prae-ind-pas
 <praes>or
-<praes>aris
-<praes>atur
-<praes>amur
-<praes>amini
+<praes>āris
+<praes>ātur
+<praes>āmur
+<praes>āminī
 <praes>antur
 
 # prae-con-pas
 <praes>er
-<praes>eris
-<praes>etur
-<praes>emur
-<praes>emini
+<praes>ēris
+<praes>ētur
+<praes>ēmur
+<praes>ēminī
 <praes>entur
 
 # impf-ind-pas
-<praes>abar
-<praes>abaris
-<praes>abatur
-<praes>abamur
-<praes>abamini
-<praes>abantur
+<praes>ābar
+<praes>ābāris
+<praes>ābātur
+<praes>ābāmur
+<praes>ābāminī
+<praes>ābantur
 
 # impf-con-pas
-<inf>r
-<inf>ris
-<inf>tur
-<inf>mur
-<inf>mini
-<inf>ntur
+<praes>ārer
+<praes>ārēris
+<praes>ārētur
+<praes>ārēmur
+<praes>ārēminī
+<praes>ārentur
 
 # fut-ind-pas
-<praes>abor
-<praes>aberis
-<praes>abitur
-<praes>abimur
-<praes>abimini
-<praes>abuntur
+<praes>ābor
+<praes>āberis
+<praes>ābitur
+<praes>ābimur
+<praes>ābiminī
+<praes>ābuntur
 
 # perf-ind-act
 <perf>i
-<perf>isti
+<perf>istī
 <perf>it
 <perf>imus
 <perf>istis
-<perf>erunt
+<perf>ērunt
 
 # perf-con-act
 <perf>erim
@@ -96,22 +96,22 @@
 
 # plusquam-ind-act
 <perf>eram
-<perf>eras
+<perf>erās
 <perf>erat
-<perf>eramus
-<perf>eratis
+<perf>erāmus
+<perf>erātis
 <perf>erant
 
 # plusquam-con-act
 <perf>issem
-<perf>isses
+<perf>issēs
 <perf>isset
-<perf>issemus
-<perf>issetis
+<perf>issēmus
+<perf>issētis
 <perf>issent
 
 # futex-act
-<perf>ero
+<perf>erō
 <perf>eris
 <perf>erit
 <perf>erimus
@@ -119,14 +119,29 @@
 <perf>erint
 
 # imperativum
-<praes>a
-<praes>ate
-<praes>ato
-<praes>ato
-<praes>atote
-<praes>anto
-<praes>are
-<praes>amini
-<praes>ator
-<praes>ator;
+<praes>ā
+<praes>āte
+<praes>ātō
+<praes>ātō
+<praes>ātōte
+<praes>antō
+<praes>āre
+<praes>āminī
+<praes>ātor
+<praes>ātor;
 <praes>antor
+
+<coniugatio>
+
+# infinitivi
+<perf>isse
+<inf>
+<fut_neu>, -am, -um esse
+<perf_neu>, am, -um esse
+<praes>ārī
+<perf_neu> īrī
+
+# participia
+<pp>, -a, -um
+<praes>āns
+<fut>, -a, -um
