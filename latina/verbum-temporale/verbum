@@ -23,11 +23,6 @@ function coniugationem_sciscere() {
 
 }
 
-function diacritica_removere() {
-    verbum="$(echo "${1}" | sed 's_ā_a_g; s_ē_e_g; s_ī_i_g; s_ō_o_g; s_ū_u_g')"
-    echo "${verbum}"
-}
-
 function run {
 
     # TODO: Update this to handle "odi."
