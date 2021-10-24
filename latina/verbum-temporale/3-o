@@ -1,5 +1,5 @@
 # prae-ind-act
-<praes>o
+<praes>ō
 <praes>is
 <praes>it
 <praes>imus
@@ -8,34 +8,34 @@
 
 # prae-con-act
 <praes>am
-<praes>as
+<praes>ās
 <praes>at
-<praes>amus
-<praes>atis
+<praes>āmus
+<praes>ātis
 <praes>ant
 
 # impf-ind-act
-<praes>ebam
-<praes>ebas
-<praes>ebat
-<praes>ebamus
-<praes>ebatis
-<praes>ebant
+<praes>ēbam
+<praes>ēbās
+<praes>ēbat
+<praes>ēbāmus
+<praes>ēbātis
+<praes>ēbant
 
 # impf-con-act
-<inf>m
-<inf>s
-<inf>t
-<inf>mus
-<inf>tis
-<inf>nt
+<praes>erem
+<praes>erēs
+<praes>eret
+<praes>erēmus
+<praes>erētis
+<praes>erent
 
 # fut-ind-act
 <praes>am
-<praes>es
+<praes>ēs
 <praes>et
-<praes>emus
-<praes>etis
+<praes>ēmus
+<praes>ētis
 <praes>ent
 
 # prae-ind-pas
@@ -43,48 +43,48 @@
 <praes>eris
 <praes>itur
 <praes>imur
-<praes>imini
+<praes>iminī
 <praes>untur
 
 # prae-con-pas
 <praes>ar
-<praes>aris
-<praes>atur
-<praes>amur
-<praes>amini
+<praes>āris
+<praes>ātur
+<praes>āmur
+<praes>āmini
 <praes>antur
 
 # impf-ind-pas
-<praes>ebar
-<praes>ebaris
-<praes>ebatur
-<praes>ebamur
-<praes>ebamini
-<praes>ebantur
+<praes>ēbar
+<praes>ēbāris
+<praes>ēbātur
+<praes>ēbāmur
+<praes>ēbāminī
+<praes>ēbantur
 
 # impf-con-pas
-<inf>r
-<inf>ris
-<inf>tur
-<inf>mur
-<inf>mini
-<inf>ntur
+<praes>erer
+<praes>erēris
+<praes>erētur
+<praes>erēmur
+<praes>erēminī
+<praes>erentur
 
 # fut-ind-pas
 <praes>ar
-<praes>eris
-<praes>etur
-<praes>emur
-<praes>emini
+<praes>ēris
+<praes>ētur
+<praes>ēmur
+<praes>ēminī
 <praes>entur
 
 # perf-ind-act
-<perf>i
-<perf>isti
+<perf>ī
+<perf>istī
 <perf>it
 <perf>imus
 <perf>istis
-<perf>erunt
+<perf>ērunt
 
 # perf-con-act
 <perf>erim
@@ -96,37 +96,52 @@
 
 # plusquam-ind-act
 <perf>eram
-<perf>eras
+<perf>erās
 <perf>erat
-<perf>eramus
-<perf>eratis
+<perf>erāmus
+<perf>erātis
 <perf>erant
 
 # plusquam-con-act
 <perf>issem
-<perf>isses
+<perf>issēs
 <perf>isset
-<perf>issemus
-<perf>issetis
+<perf>issēmus
+<perf>issētis
 <perf>issent
 
 # futex-act
-<perf>ero
+<perf>ērō
 <perf>eris
 <perf>erit
 <perf>erimus
 <perf>eritis
 <perf>erint
 
-# imperativ
-<praes>e
+# imperativum
+<praes>
 <praes>ite
-<praes>ito
-<praes>ito
-<praes>itote
-<praes>unto
+<praes>itō
+<praes>itō
+<praes>itōte
+<praes>untō
 <praes>ere
-<praes>imini
+<praes>iminī
 <praes>itor
 <praes>itor;
-<praes>untor
+<praes>iuntor
+
+<coniugatio>
+
+# infinitivi
+<perf>isse
+<inf>
+<fut_neu>, -am, -um esse
+<perf_neu>, am, -um esse
+<praes>ī
+<perf_neu> īrī
+
+# participia
+<pp>, -a, -um
+<praes>ēns
+<fut>, -a, -um
