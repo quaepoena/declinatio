@@ -29,8 +29,8 @@ function coniugationem_sciscere() {
 
 function run {
 
-    if ! declinatio::ends_with "$1" "ō"; then
-	echo "Praesentem cum 'ō' finire debet." >&2
+    if ! (declinatio::ends_with "$1" "ō" || declinatio::ends_with "${1}" "or"); then
+	echo "Praesentem cum siue 'ō' siue 'or' finire debet." >&2
 	return 1
     fi
 
