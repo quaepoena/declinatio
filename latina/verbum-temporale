@@ -9,14 +9,14 @@ function coniugationem_sciscere() {
 	echo "1"
     elif declinatio::ends_with "$2" "ēre"; then
 	echo "2"
-    elif declinatio::ends_with "$2" "īre"; then
-	echo "4"
     elif declinatio::ends_with "$2" "ere"; then
-	if declinatio::ends_with "$1" "iō" ]]; then
+	if declinatio::ends_with "$1" "iō"; then
 	    echo "3-io"
 	else
 	    echo "3-o"
 	fi
+    elif declinatio::ends_with "$2" "īre"; then
+	echo "4"
     else
 	echo "Not valid conjugation type." >&2
 	echo "${usage}" >&2
@@ -29,8 +29,8 @@ function coniugationem_sciscere() {
 
 function run {
 
-    if ! (declinatio::ends_with "$1" "ō" || declinatio::ends_with "${1}" "or"); then
-	echo "Praesentem cum siue 'ō' siue 'or' finire debet." >&2
+    if ! declinatio::ends_with "$1" "ō"; then
+	echo "Praesentem cum siue 'ō' finire debet." >&2
 	return 1
     fi
 
