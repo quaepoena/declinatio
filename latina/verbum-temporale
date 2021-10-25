@@ -1,7 +1,7 @@
 # -*- mode: Shell-Script;-*-
 
 argument_count=4
-usage="Usus: verbum <a verbo declinatio> (e.g. amō amāvī amātus amāre)"
+usage="Usus: verbum-temporale <a verbo declinatio> (e.g. amō amāvī amātus amāre)"
 
 function coniugationem_sciscere() {
 
