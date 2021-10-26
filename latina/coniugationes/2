@@ -133,11 +133,13 @@
 
 <coniugatio>
 
-# infinitivi
+# infinitivi activi
 <perf>isse
 <inf>
-<fut_neu>, -am, -um esse
-<perf_neu>, am, -um esse
+<fut>, -a, -um esse
+
+# infinitivi passivi
+<pp>, -a, -um esse
 <praes>ērī
 <perf_neu> īrī
 
