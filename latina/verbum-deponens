@@ -25,13 +25,18 @@ function coniugationem_sciscere() {
 
 function run {
 
-    if ! declinatio::ends_with "${1}" "or"; then
-	echo "Praesentem cum siue 'ō' finire debet." >&2
+    if ! [[ "${1}" =~ rī$ || "${1}" =~ uī$ ]]; then
+	echo "Infinitivum cum sive 'rī' sive 'uī' finire debet." >&2
 	return 1
     fi
 
-    if ! declinatio::ends_with "${2}" "us"; then
-	echo "PP cum siue 'us' finire debet." >&2
+    if ! [[ "${2}" =~ or$ ]]; then
+	echo "Praesentem cum 'or' finire debet." >&2
+	return 1
+    fi
+
+    if ! [[ "${3}" =~ us$ ]]; then
+	echo "Participium perfectum cum 'us' finire debet." >&2
 	return 1
     fi
 
