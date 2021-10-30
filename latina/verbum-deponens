@@ -1,17 +1,17 @@
 # -*- mode: Shell-Script;-*-
 
 argument_count=3
-usage="Usus: verbum-deponens <a verbo declinatio> (e.g. hortor hortātus hortārī)"
+usage="Usus: verbum-deponens <a verbo declinatio> (e.g. hortārī hortor hortātus)"
 
 function coniugationem_sciscere() {
 
-    if declinatio::ends_with "$1" "ārī"; then
+    if [[ "$1" =~ ārī$ ]]; then
 	echo "1-dep"
-    elif declinatio::ends_with "$1" "ērī"; then
+    elif [[ "$1" =~ ērī$ ]]; then
 	echo "2-dep"
-    elif declinatio::ends_with "$1" "uī"; then
+    elif [[ "$1" =~ uī$ ]]; then
 	echo "3-dep"
-    elif declinatio::ends_with "$1" "īrī"; then
+    elif [[ "$1" =~ īrī$ ]]; then
 	echo "4-dep"
     else
 	echo "Not valid conjugation type." >&2
@@ -41,9 +41,9 @@ function run {
 	return 1
     fi
 
-    local praes="${1%or}"
-    local pp="$2"
-    local inf="$3"
+    local inf="$1"
+    local praes="${2%or}"
+    local pp="$3"
 
     local perf_neu="${pp/%s/m}"
     local fut="${pp/%us/ūrus}"
