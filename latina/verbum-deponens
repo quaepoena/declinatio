@@ -48,6 +48,12 @@ function run {
     local perf_neu="${pp/%s/m}"
     local fut="${pp/%us/ūrus}"
     local fut_neu="${fut/%s/m}"
+    local sup2=""
+
+    local perf="${3%ī}"
+    local perf_neu="${pp/%s/m}"
+    local fut="${pp/%us/ūrus}"
+    local sup2="${perf_neu/%um/ū}"
 
     while read line; do
 	if [[ "${line}" =~ \<(.+)\> ]]; then
