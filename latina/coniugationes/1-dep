@@ -48,9 +48,14 @@
 <coniugatio>
 
 # infinitivi
-<perf_neu>, am, -um esse
+<pp>, a, -um esse
 <inf>
-<fut_neu>, -am, -um esse
+<fut>, -a, -um esse
+
+# participium
+<pp>
+<praes>āns
+<fut>
 
 # gerundivum
 <praes>andus, -a, um

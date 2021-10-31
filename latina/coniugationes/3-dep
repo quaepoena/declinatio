@@ -1,10 +1,10 @@
 # prae-ind-pas
-<praes>eor
-<praes>ēris
-<praes>ētur
-<praes>ēmur
-<praes>ēminī
-<praes>entur
+<praes>or
+<praes>eris
+<praes>itur
+<praes>imur
+<praes>iminī
+<praes>untur
 
 # prae-con-pas
 <praes>ar
@@ -23,27 +23,27 @@
 <praes>ēbantur
 
 # impf-con-pas
-<praes>ērer
-<praes>ērēris
-<praes>ērētur
-<praes>ērēmur
-<praes>ērēminī
-<praes>ērentur
+<praes>erer
+<praes>erēris
+<praes>erētur
+<praes>erēmur
+<praes>erēminī
+<praes>erentur
 
 # fut-ind-pas
-<praes>ēbor
-<praes>ēberis
-<praes>ēbitur
-<praes>ēbimur
-<praes>ēbiminī
-<praes>ēbuntur
+<praes>ar
+<praes>ēris
+<praes>ētur
+<praes>ēmur
+<praes>ēminī
+<praes>entur
 
 # imperativum
-<praes>āre
-<praes>āminī
-<praes>ātor
-<praes>ātor;
-<praes>antor
+<praes>ere
+<praes>iminī
+<praes>itor
+<praes>itor;
+<praes>untor
 
 <coniugatio>
 
@@ -58,10 +58,10 @@
 <fut>
 
 # gerundivum
-<praes>endus, -a, um
+<praes>andus, -a, um
 
 # gerundium
-<praes>endum
+<praes>andum
 
 # supina
 <perf_neu>

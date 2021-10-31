@@ -14,7 +14,7 @@ function coniugationem_sciscere() {
     elif [[ "$1" =~ īrī$ ]]; then
 	echo "4-dep"
     else
-	echo "Not valid conjugation type." >&2
+	echo "Not a valid conjugation type." >&2
 	echo "${usage}" >&2
 	echo "error"
     fi
@@ -40,24 +40,27 @@ function run {
 	return 1
     fi
 
-    coniugatio="$(coniugationem_sciscere "$3")"
+    coniugatio="$(coniugationem_sciscere "$1")"
 
     if [[ "${coniugatio}" == "error" ]]; then
 	return 1
     fi
 
     local inf="$1"
-    local praes="${2%or}"
+
+    if [[ "${coniugatio}" == "2-dep" ]]; then
+	local praes="${2%eor}"
+    elif [[ "${coniugatio}" == "4-dep" ]]; then
+	local praes="${2%ior}"
+    else
+	local praes="${2%or}"
+    fi
+
     local pp="$3"
 
-    local perf_neu="${pp/%s/m}"
     local fut="${pp/%us/ūrus}"
     local fut_neu="${fut/%s/m}"
-    local sup2=""
-
-    local perf="${3%ī}"
     local perf_neu="${pp/%s/m}"
-    local fut="${pp/%us/ūrus}"
     local sup2="${perf_neu/%um/ū}"
 
     while read line; do
