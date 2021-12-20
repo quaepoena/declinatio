@@ -1,3 +1,5 @@
+# -*- mode: Shell-script; -*-
+
 function declinatio() {
     if [[ "$#" -lt 1 ]]; then
 	echo "Usage: declinatio file [args]" >&2
