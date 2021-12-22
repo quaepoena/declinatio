@@ -7,9 +7,9 @@ function coniugationem_sciscere() {
 
     if [[ "$1" =~ āre$ ]]; then
 	echo "1"
-    elif [[ "$1" =~ $ ēre$ ]]; then
+    elif [[ "$1" =~ ēre$ ]]; then
 	echo "2"
-    elif [[ "$1" =~ $ ere$ ]]; then
+    elif [[ "$1" =~ ere$ ]]; then
 	if [[ "$2" =~ iō$ ]]; then
 	    echo "3-io"
 	else
