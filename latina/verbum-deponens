@@ -14,7 +14,7 @@ function coniugationem_sciscere() {
     elif [[ "$1" =~ īrī$ ]]; then
 	echo "4-dep"
     else
-	echo "Not a valid conjugation type." >&2
+	echo "Not a valid inifinitve ending." >&2
 	echo "${usage}" >&2
 	echo "error"
     fi
