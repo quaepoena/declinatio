@@ -46,7 +46,7 @@ function run {
 	    return 1
 	fi
 
-	praes="${1%ēri}"
+	praes="${2%eor}"
 
     elif [[ "${coniugatio}" == "4-dep" ]]; then
 	if ! [[ "$2" =~ ior$ ]]; then
@@ -55,7 +55,7 @@ function run {
 	    return 1
 	fi
 
-	praes="${1%īrī}"
+	praes="${2%ior}"
 
     else
 	if ! [[ "$2" =~ or$ ]]; then
@@ -64,7 +64,7 @@ function run {
 	    return 1
 	fi
 
-	praes="${1%ēri}"
+	praes="${2%or}"
     fi
 
     local pp="$3"
