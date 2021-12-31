@@ -40,7 +40,7 @@ function run {
     local praes=""
 
     if [[ "${coniugatio}" == "2-dep" ]]; then
-	if ! [[ "$2" ~= eor$ ]]; then
+	if ! [[ "$2" =~ eor$ ]]; then
 	    echo "Tempus praesens, $2, cum 'eor' finire debet." >&2
 	    echo "${usage}" >&2
 	    return 1
@@ -49,7 +49,7 @@ function run {
 	praes="${1%ēri}"
 
     elif [[ "${coniugatio}" == "4-dep" ]]; then
-	if ! [[ "$2" ~= ior$ ]]; then
+	if ! [[ "$2" =~ ior$ ]]; then
 	    echo "Tempus praesens, $2, cum 'ior' finire debet." >&2
 	    echo "${usage}" >&2
 	    return 1
@@ -58,7 +58,7 @@ function run {
 	praes="${1%īrī}"
 
     else
-	if ! [[ "$2" ~= or$ ]]; then
+	if ! [[ "$2" =~ or$ ]]; then
 	    echo "Tempus praesens, $2, cum 'or' finire debet." >&2
 	    echo "${usage}" >&2
 	    return 1
