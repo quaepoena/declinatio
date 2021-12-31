@@ -47,6 +47,37 @@ function run {
     fi
 
     local inf="$1"
+    local praes=""
+
+    if [[ "${coniugatio}" == "2-dep" ]]; then
+	if ! [[ "$2" ~= eor$ ]]; then
+	    echo "Tempus praesens, $2, cum 'eor' finire debet." >&2
+	    echo "${usage}" >&2
+	    return 1
+	fi
+
+	praes="${1%ēri}"
+
+    elif [[ "${coniugatio}" == "4-dep" ]]; then
+	if ! [[ "$2" ~= ior$ ]]; then
+	    echo "Tempus praesens, $2, cum 'ior' finire debet." >&2
+	    echo "${usage}" >&2
+	    return 1
+	fi
+
+	praes="${1%īrī}"
+
+    else
+	if ! [[ "$2" ~= or$ ]]; then
+	    echo "Tempus praesens, $2, cum 'or' finire debet." >&2
+	    echo "${usage}" >&2
+	    return 1
+	fi
+
+	praes="${1%ēri}"
+    fi
+
+    fi
 
     if [[ "${coniugatio}" == "2-dep" ]]; then
 	local praes="${2%eor}"
