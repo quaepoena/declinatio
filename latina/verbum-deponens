@@ -67,18 +67,7 @@ function run {
 	praes="${1%ēri}"
     fi
 
-    fi
-
-    if [[ "${coniugatio}" == "2-dep" ]]; then
-	local praes="${2%eor}"
-    elif [[ "${coniugatio}" == "4-dep" ]]; then
-	local praes="${2%ior}"
-    else
-	local praes="${2%or}"
-    fi
-
     local pp="$3"
-
     local fut="${pp/%us/ūrus}"
     local fut_neu="${fut/%s/m}"
     local perf_neu="${pp/%s/m}"
