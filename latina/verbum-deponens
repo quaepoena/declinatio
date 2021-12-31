@@ -25,16 +25,6 @@ function coniugationem_sciscere() {
 
 function run {
 
-    if ! [[ "${1}" =~ rī$ || "${1}" =~ uī$ ]]; then
-	echo "Infinitivum cum sive 'rī' sive 'uī' finire debet." >&2
-	return 1
-    fi
-
-    if ! [[ "${2}" =~ or$ ]]; then
-	echo "Praesentem cum 'or' finire debet." >&2
-	return 1
-    fi
-
     if ! [[ "${3}" =~ us$ ]]; then
 	echo "Participium perfectum cum 'us' finire debet." >&2
 	return 1
