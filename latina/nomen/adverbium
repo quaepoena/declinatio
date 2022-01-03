@@ -1,7 +1,7 @@
 # ; -*- mode: Shell-Script;-*-
 
 argument_count=2
-usage="Usage: adverbium word stem."
+usage="Usus: adverbium word stem."
 
 function run {
     local -r word="$1"
