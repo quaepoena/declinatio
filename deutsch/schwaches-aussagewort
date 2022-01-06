@@ -63,10 +63,6 @@ function run {
 	part_perf="${praefix}${part_perf}"
     fi
 
-    echo "${inf}"
-    echo "${part_perf}"
-    echo "${hilfsverb}"
-
     # präsens aktiv indikativ
     echo "ich ${stamm}e"
     declinatio::check_mt "du ${stamm}st"
@@ -476,5 +472,8 @@ function run {
     declinatio::print_passive "wir würden ${part_perf} gewesen sein" "${zustandspassiv}" "j"
     declinatio::print_passive "ihr würdet ${part_perf} gewesen sein" "${zustandspassiv}" "j"
     declinatio::print_passive "sie würden ${part_perf} gewesen sein" "${zustandspassiv}" "j tjj"
+    echo "${inf}"
+    echo "${hilfsverb}"
+    echo "${part_perf}"
 
 }
