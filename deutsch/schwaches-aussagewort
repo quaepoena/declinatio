@@ -23,7 +23,7 @@ function run {
     fi
 
     if ! [[ "${hilfsverb}" == "haben" || "${hilfsverb}" == "sein" ]]; then
-	echo "Das Hilfsverb muss entwedes 'haben' oder 'sein' sein." >&2
+	echo "Das Hilfsverb muss entweder 'haben' oder 'sein' sein." >&2
 	echo "${usage}" >&2
 	return 1
     fi
