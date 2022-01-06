@@ -12,10 +12,8 @@ function run {
     local temp_stamm
     local praefix
 
-    if declinatio::ends_with "${inf}" "en"; then
-	stamm="${inf%en}"
-    elif declinatio::ends_with "${inf}" "n"; then
-	stamm="${inf%n}"
+    if [[ "${inf}" =~ ^(.*[^e])(e{,1}n)$ ]]; then
+	stamm="${BASH_REMATCH[1]"
     else
 	echo "The infinitive didn't end with \"(e)n.\"" >&2
 	echo "${usage}" >&2
@@ -46,7 +44,7 @@ function run {
 
     for praefix in "ab" "an" "auf" "aus" "empor" "fest" "frei" "herüber" "her" "hinauf" "hinaus" "hin" "hoch" "mit" "nach" "preis" "stand" "weg" "zu"; do
 
-	if declinatio::begins_with "${stamm}" "${praefix}"; then
+	if [[ "${stamm}" =~ $"${praefix}"; then
 	    temp_stamm="${stamm}"
 	    stamm="${stamm#${praefix}}"
 	    break
@@ -54,7 +52,7 @@ function run {
 
     done
 
-    if declinatio::begins_with "${stamm}" "ge"; then
+    if [[ "${stamm}" =~ $ge ]]; then
 	part_perf="$(declinatio::check_mt "${stamm}t")"
     else
 	part_perf="$(declinatio::check_mt "ge${stamm}t")"
