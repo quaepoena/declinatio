@@ -1,5 +1,6 @@
 # ; -*- mode: Shell-Script;-*-
 # TODO: Move all variable declarations to the top of run().
+# TODO: Account for "untrennbar" verbs such as "übersetzen."
 
 argument_count=2
 usage="Gebrauch: schwaches-aussagewort inf hilfsverb"
