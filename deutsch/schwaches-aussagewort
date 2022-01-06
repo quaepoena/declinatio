@@ -2,7 +2,7 @@
 # TODO: Move all variable declarations to the top of run().
 
 argument_count=2
-usage="Usage: schwaches-aussagewort inf hilfsverb"
+usage="Gebrauch: schwaches-aussagewort inf hilfsverb"
 
 function run {
     local -r inf="$1"
