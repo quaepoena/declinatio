@@ -42,7 +42,7 @@ function run {
 	return 1
     fi
 
-    for praefix in "ab" "an" "auf" "aus" "empor" "fest" "frei" "herüber" "her" "hinauf" "hinaus" "hin" "hoch" "mit" "nach" "preis" "stand" "weg" "zu"; do
+    for praefix in "ab" "an" "auf" "aus" "empor" "fest" "frei" "herüber" "her" "hinauf" "hinaus" "hin" "hoch" "mit" "nach" "preis" "stand" "weg" "zurück" "zu"; do
 
 	if [[ "${stamm}" =~ $"${praefix}"; then
 	    temp_stamm="${stamm}"
