@@ -15,7 +15,7 @@ function run {
     if [[ "${inf}" =~ ^(.*[^e])(e{,1}n)$ ]]; then
 	stamm="${BASH_REMATCH[1]"
     else
-	echo "The infinitive didn't end with \"(e)n.\"" >&2
+	echo "Der Infinitiv muss mit (e)n enden." >&2
 	echo "${usage}" >&2
 	return 1
     fi
