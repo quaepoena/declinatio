@@ -1,24 +1,24 @@
 # ; -*- mode: Shell-Script;-*-
 
 argument_count=2
-usage="Usage: 3n-um word stem."
+usage="Usus: 3n-um <vox> <radix>"
 
 function run {
-    local -r word="$1"
-    local -r stem="$2"
+    local -r vox="$1"
+    local -r radix="$2"
 
-    echo "${word}"
-    echo "${word}"
-    echo "${word}"
-    echo "${stem}is"
-    echo "${stem}i"
-    echo "${stem}e"
-    echo "${stem}a"
-    echo "${stem}a"
-    echo "${stem}a"
-    echo "${stem}um"
-    echo "${stem}ibus"
-    echo "${stem}ibus"
+    echo "${vox}"
+    echo "${vox}"
+    echo "${vox}"
+    echo "${radix}is"
+    echo "${radix}ī"
+    echo "${radix}e"
+    echo "${radix}a"
+    echo "${radix}a"
+    echo "${radix}a"
+    echo "${radix}um"
+    echo "${radix}ibus"
+    echo "${radix}ibus"
 
     echo "3n-um"
 }
