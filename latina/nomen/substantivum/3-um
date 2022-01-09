@@ -1,7 +1,7 @@
 # ; -*- mode: Shell-Script;-*-
 
 argument_count=2
-usage="Usage: 3f-um word stem."
+usage="Usus: 3-um <vox> <radix>."
 
 function run {
     local -r word="$1"
