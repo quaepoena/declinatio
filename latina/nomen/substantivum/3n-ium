@@ -1,6 +1,6 @@
 # ; -*- mode: Shell-Script;-*-
 
-argument_count=1
+argument_count=2
 usage="Usus: 3n-ium <vox> <radix>"
 
 function run {
