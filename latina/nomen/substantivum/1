@@ -1,7 +1,7 @@
 # ; -*- mode: Shell-Script;-*-
 
 argument_count=1
-usage="Usage: 1 word."
+usage="Usus: 1 <vox>."
 
 function run {
     local -r word="$1"
