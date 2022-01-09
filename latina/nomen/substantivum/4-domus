@@ -1,7 +1,7 @@
 # ; -*- mode: Shell-Script;-*-
 
 argument_count=1
-usage="Usage: 4-domus word."
+usage="Usus: 4-domus <vox>"
 
 function run {
     local -r word="$1"
@@ -10,12 +10,12 @@ function run {
     echo "${stem}us"
     echo "${stem}us"
     echo "${stem}um"
-    echo "${stem}us"
-    echo "${stem}ui"
-    echo "${stem}o"
-    echo "${stem}us"
-    echo "${stem}us"
-    echo "${stem}os"
+    echo "${stem}ūs"
+    echo "${stem}uī"
+    echo "${stem}ō"
+    echo "${stem}ūs"
+    echo "${stem}ūs"
+    echo "${stem}ōs"
     echo "${stem}uum"
     echo "${stem}ibus"
     echo "${stem}ibus"
