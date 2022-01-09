@@ -1,24 +1,24 @@
 # ; -*- mode: Shell-Script;-*-
 
 argument_count=1
-usage="Usage: 4n word."
+usage="Usus: 4n <vox>"
 
 function run {
-    local -r word="$1"
-    local -r stem="${word%u}"
+    local -r vox="$1"
+    local -r radix="${vox%u}"
 
-    echo "${stem}u"
-    echo "${stem}u"
-    echo "${stem}u"
-    echo "${stem}us"
-    echo "${stem}u"
-    echo "${stem}u"
-    echo "${stem}ua"
-    echo "${stem}ua"
-    echo "${stem}ua"
-    echo "${stem}uum"
-    echo "${stem}ibus"
-    echo "${stem}ibus"
+    echo "${radix}u"
+    echo "${radix}u"
+    echo "${radix}u"
+    echo "${radix}ūs"
+    echo "${radix}ū/uī"
+    echo "${radix}ū"
+    echo "${radix}ua"
+    echo "${radix}ua"
+    echo "${radix}ua"
+    echo "${radix}uum"
+    echo "${radix}ibus"
+    echo "${radix}ibus"
 
     echo "4n"
 }
