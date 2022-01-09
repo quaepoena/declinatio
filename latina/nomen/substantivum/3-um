@@ -20,5 +20,5 @@ function run {
     echo "${stem}ibus"
     echo "${stem}ibus"
 
-    echo "3f-um"
+    echo "3-um"
 }
