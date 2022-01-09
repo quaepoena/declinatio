@@ -12,13 +12,13 @@ function run {
     echo "${stem}am"
     echo "${stem}ae"
     echo "${stem}ae"
-    echo "${stem}a"
+    echo "${stem}ā"
     echo "${stem}ae"
     echo "${stem}ae"
-    echo "${stem}as"
-    echo "${stem}arum"
-    echo "${stem}is"
-    echo "${stem}is"
+    echo "${stem}ās"
+    echo "${stem}ārum"
+    echo "${stem}īs"
+    echo "${stem}īs"
 
     echo "1"
 }
