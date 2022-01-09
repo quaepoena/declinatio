@@ -1,24 +1,24 @@
 # ; -*- mode: Shell-Script;-*-
 
 argument_count=1
-usage="Usage: 5 word."
+usage="Usus: 5 <vox>"
 
 function run {
-    local -r word="$1"
-    local -r stem="${word%s}"
+    local -r vox="$1"
+    local -r radix="${vox%s}"
 
-    echo "${stem}s"
-    echo "${stem}s"
-    echo "${stem}m"
-    echo "${stem}i"
-    echo "${stem}i"
-    echo "${stem}"
-    echo "${stem}s"
-    echo "${stem}s"
-    echo "${stem}s"
-    echo "${stem}rum"
-    echo "${stem}bus"
-    echo "${stem}bus"
+    echo "${radix}s"
+    echo "${radix}s"
+    echo "${radix}m"
+    echo "${radix}ī"
+    echo "${radix}ī"
+    echo "${radix}"
+    echo "${radix}s"
+    echo "${radix}s"
+    echo "${radix}s"
+    echo "${radix}rum"
+    echo "${radix}bus"
+    echo "${radix}bus"
 
     echo "5"
 }
